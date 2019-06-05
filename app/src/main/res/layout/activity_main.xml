@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/layout"
+    >
+<TextView
+    android:id="@+id/addButton"
+    android:layout_width="200dp"
+    android:layout_height="50dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="30dp"
+    android:text="点击代码添加Button"
+    android:gravity="center"
+    android:textSize="20sp"
+    android:background="#0f0"
+    />
+
+    <com.example.my_android_demo.view.DrawView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addButton"
+        app:currentX="400"
+        app:currentY="200"
+        app:radius="50"
+        />
+
+    <!--<com.example.my_android_demo.view.MyView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/addButton"-->
+        <!--android:layout_marginTop="100dp"-->
+        <!--app:textColor="#f00"-->
+        <!--app:titleText="这是自定义组件"-->
+        <!--&gt;-->
+    <!--</com.example.my_android_demo.view.MyView>-->
+
+
+
+</android.support.constraint.ConstraintLayout>
